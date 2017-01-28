@@ -44,7 +44,21 @@ public void start(Stage primaryStage) {
     matrix = new Button[width][length]; 
     
     for (int x = 0; x < 3; x++) {
-    	
+    	int y = 0;
+    	matrix[x][y] = new Button(); 
+        matrix[x][y].setFont(Font.font ("nyala", 70));
+    	if (x == 0) {
+    		matrix[x][y].setText("C");
+            root.add(matrix[x][y], x, y);
+    	}
+    	else if (x == 1) {
+    		matrix[x][y].setText("±");
+            root.add(matrix[x][y], x, y);
+    	}
+    	else {
+    		matrix[x][y].setText("%");
+            root.add(matrix[x][y], x, y);
+    	}
     }
     
     for (int y = 0; y < 4; y++){
