@@ -75,7 +75,7 @@ public void start(Stage primaryStage) {
         	root.add(matrix[x][y], x, y);
         }
         else if (y == 2) {
-        	matrix[x][y].setText("-");
+        	matrix[x][y].setText("–");
         	root.add(matrix[x][y], x, y);
         }
         else {
